@@ -11,6 +11,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
@@ -27,5 +28,30 @@ public class InstituitionService {
 
     public Instituition create(Instituition newinstituition){
         return repository.save(newinstituition);
+    }
+
+    public void delete(Integer id){
+        Optional<Instituition> instituition = repository.findById(id);
+        if (instituition.isEmpty()){
+            throw new ResponseStatusException(HttpStatus.NOT_FOUND);
+        }
+        repository.delete(instituition.get());
+    }
+
+    public Instituition update(Integer id, Instituition instituition){
+        Optional<Instituition> instituitionOpt = repository.findById(id);
+
+        if (instituitionOpt.isEmpty()) {
+            throw new ResponseStatusException(HttpStatus.NOT_FOUND);
+        }
+        Instituition updatedInstituition = instituitionOpt.get();
+
+       updatedInstituition.setCnpj(instituition.getCnpj());
+       updatedInstituition.setEmail(instituition.getEmail());
+       updatedInstituition.setName(instituition.getName());
+       updatedInstituition.setPassword(instituition.getPassword());
+       updatedInstituition.setDonations(instituition.getDonations());
+
+        return updatedInstituition;
     }
 }
