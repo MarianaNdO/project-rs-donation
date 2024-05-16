@@ -18,7 +18,7 @@ public class DonorService {
 
     public List<Donor> list(){ return repository.findAll();}
 
-    public Donor porId(Integer id){
+    public Donor byId(Integer id){
         return repository.findById(id).orElseThrow(
                 () -> new ResponseStatusException(HttpStatus.NOT_FOUND)
         );

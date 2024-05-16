@@ -19,7 +19,7 @@ public class InstituitionService {
 
     public List<Instituition> list(){ return repository.findAll();}
 
-    public Instituition porId(Integer id){
+    public Instituition byId(Integer id){
         return repository.findById(id).orElseThrow(
                 () -> new ResponseStatusException(HttpStatus.NOT_FOUND)
         );
