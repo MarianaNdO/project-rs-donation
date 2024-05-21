@@ -1,9 +1,7 @@
 package mariana.nascimento.projectrsdonation.services.donor;
 
 import lombok.RequiredArgsConstructor;
-import mariana.nascimento.projectrsdonation.entities.Donation;
 import mariana.nascimento.projectrsdonation.entities.Donor;
-import mariana.nascimento.projectrsdonation.repositories.DonationRepository;
 import mariana.nascimento.projectrsdonation.repositories.DonorRepository;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;

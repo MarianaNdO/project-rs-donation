@@ -1,6 +1,5 @@
 package mariana.nascimento.projectrsdonation.repositories;
 
-import mariana.nascimento.projectrsdonation.entities.Donor;
 import mariana.nascimento.projectrsdonation.entities.Instituition;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

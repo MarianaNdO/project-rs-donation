@@ -1,9 +1,5 @@
 package mariana.nascimento.projectrsdonation.dtos.donor;
 
-import mariana.nascimento.projectrsdonation.dtos.donation.DonationCreationDto;
-import mariana.nascimento.projectrsdonation.dtos.donation.DonationListDto;
-import mariana.nascimento.projectrsdonation.dtos.donation.DonationMapper;
-import mariana.nascimento.projectrsdonation.entities.Donation;
 import mariana.nascimento.projectrsdonation.entities.Donor;
 
 import java.util.List;

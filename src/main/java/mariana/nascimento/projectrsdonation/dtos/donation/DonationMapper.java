@@ -1,9 +1,5 @@
 package mariana.nascimento.projectrsdonation.dtos.donation;
-
-import jakarta.persistence.MappedSuperclass;
 import mariana.nascimento.projectrsdonation.entities.Donation;
-import org.springframework.web.bind.annotation.Mapping;
-
 import java.util.List;
 
 public class DonationMapper {

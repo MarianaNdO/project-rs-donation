@@ -1,15 +1,10 @@
 package mariana.nascimento.projectrsdonation.controllers;
 
 import lombok.RequiredArgsConstructor;
-import mariana.nascimento.projectrsdonation.dtos.donation.DonationCreationDto;
-import mariana.nascimento.projectrsdonation.dtos.donation.DonationListDto;
-import mariana.nascimento.projectrsdonation.dtos.donation.DonationMapper;
 import mariana.nascimento.projectrsdonation.dtos.donor.DonorCreationDto;
 import mariana.nascimento.projectrsdonation.dtos.donor.DonorListDto;
 import mariana.nascimento.projectrsdonation.dtos.donor.DonorMapper;
-import mariana.nascimento.projectrsdonation.entities.Donation;
 import mariana.nascimento.projectrsdonation.entities.Donor;
-import mariana.nascimento.projectrsdonation.services.donation.DonationService;
 import mariana.nascimento.projectrsdonation.services.donor.DonorService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
